@@ -10,9 +10,6 @@ public class HelloAction extends AnAction {
     public void actionPerformed(AnActionEvent event) {
         Project project = event.getProject();
 
-        boolean result = new SampleDialogWrapper().showAndGet();
-        if(result) {
-            System.out.println("OK Button is pressed");
-        }
+        new SampleDialogWrapper().show();
     }
 }
